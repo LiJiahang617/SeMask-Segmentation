@@ -134,7 +134,7 @@ def main():
 
     logger.info(model)
 
-    datasets = [build_dataset(cfg.data.train)]
+    datasets = [build_dataset(cfg.data.train)]  #  from where?
     if len(cfg.workflow) == 2:
         val_dataset = copy.deepcopy(cfg.data.val)
         val_dataset.pipeline = cfg.data.train.pipeline
